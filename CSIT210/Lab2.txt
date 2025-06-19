@@ -1,0 +1,54 @@
+Daveed A. Sumpter [su1189596@email.ccbcmd.edu]
+Overview: CSIT 210: LAB 2
+9 February 2025
+
+
+1. When storing data, there are many different data types to choose. What type would be best to store:
+a. an age (consider the average life expectancy of Cat)? 
+
+A float of Floating Point Data Type would be the best data type choice to store the average life expectancy of a cat or the age of a person. A float of Floating Point Data Type provides the sufficient level of precision to describe an age, such as 35.5 years old. Ages do not require many decimal places to be displayed in comparison to scientific values.
+
+b. A temperature for a home thermostat in Maryland?
+
+An integer data type would be appropriate to display the temperature for a home thermostat in Maryland because they normally display temperatures in whole numbers (measured in degrees Fahrenheit).
+
+c. The result of a calculation that needs very precise accuracy such as for a dose of medicine?
+
+A double data type would be most appropriate for precise accuracy of a dose of medicine because it calculates a dose, for example, in terms of grams to the correct level of decimal place values. This is critical for doctors and nurses because a dose of medicine could mean the difference between life and death for a patient. You would not want to use a float when calculating doses of medicine because a float rounds or estimates the value, which could be quite dangerous in the field of medicine.
+
+2. What is wrong with the following expression (assume all variables have been properly declared)?
+net = ((gross – expenses) / 2) % 4) / 9;
+
+The following expression states that net is equal to gross minus expenses divided by two, multiplied by the remainder four, which is then divided by 9. Assuming all variables have been properly declared, multiplying by the remainder four does not make sense to me because I am not sure where this remainder value came from. Therefore, this expression seems to be invalid/incorrect.
+
+
+3. What value is contained in the integer variable size after the following statements are executed?
+ size = 8; size += size + 12; size = size * 9; size = size / 3;
+
+size += 8 + 12 = 20
+size = size * 9------> size = 20 * 9 = 180
+size = size / 3 -----> size = 180/3 = 60
+size = 60
+
+
+
+
+
+4. What is contained in the floating point variable depth after the following statements are executed?
+ depth = 2.7; depth = 20 - depth * 4; depth = depth / 5;
+
+depth = 20-(2.7 * 4)                  depth = depth / 5
+depth = 20-(10.8)                     depth = 9.2 / 5
+depth = 20 - 10.8                     depth = 1.84
+depth = 9.2                           Final answer: depth = 1.8
+
+
+
+5. What value is contained in the integer variable length after the following statements are executed?
+ length = 32; length *= 2+1; length *= length; length /= length;
+
+length = 32 -----> length = length * (2 + 1) ---------> length = 32 * (3)--------> length = 96
+length *= length ------> length = length * length ------> length = 96 * 96 -------> length = 9,216
+length /= length ------> length = length / length ------> length = 9,216/ 9,216 --------> length = 1
+
+Final answer: length = 1
